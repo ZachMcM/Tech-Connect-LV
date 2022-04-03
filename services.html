@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Tech Connect LV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <script src="https://kit.fontawesome.com/8c371e499e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'>
+</head>
+<body class="servicesPage">
+
+    <!--Navigation bar section-->
+
+    <nav class="navbar">
+        <div class="pageHeader">
+            <div class="title">
+                Tech Connect LV
+            </div>
+            <div class="toggleButton">
+                <span class="material-icons-outlined menuOpen">menu</span>
+            </div>
+        </div>
+        <div class="navLinks">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button class="registerBtn"><a href="register.html">Register</a></button></li>
+            </ul>
+        </div>
+   </nav>
+
+   <!--Services section-->
+
+   <div class="services">
+       <h1>What we offer.</h1>
+       <div class="servicesContent">
+        <div class="servicesCard">
+            <div class="cardBar"></div>
+            <div class="servicesImageContainer">
+                <img src="pic4.svg" alt="workshop">
+            </div>
+            <h2>Workshops</h2>
+            <p>Learn how to engineer, design, and code</p>
+            <button class="servicesBtn" id="modalBtnOne">Learn More</button>
+        </div>
+        <div class="servicesCard">
+            <div class="cardBar"></div>
+            <div class="servicesImageContainer">
+                <img src="pic5.svg" alt="seminars">
+            </div>
+            <h2>Seminars</h2>
+            <p>Learn vauable concepts from the pros</p>
+            <button class="servicesBtn" id="modalBtnTwo">Learn More</button>
+        </div>
+        <div class="servicesCard">
+            <div class="cardBar"></div>
+            <div class="servicesImageContainer">
+                <img src="pic6.svg" alt="virtual">
+            </div>
+            <h2>Virtual Sessions</h2>
+            <p>Connect with us virtually through online meetings</p>
+            <button class="servicesBtn" id="modalBtnThree">Learn More</button>
+        </div>
+       </div>
+   </div>
+
+  <div class="modalBackground" id="modalBackgroundOne">
+      <div class="modal">
+          <div class="modalHeader">
+              <p>Categories</p>
+              <button class="modalClose" id="modalCloseOne"><span class="material-icons-outlined">close</span></button>
+          </div>
+          <div class="modalContent">
+              <ul class="modalList">
+                  <li><i class="fas fa-check"></i>web design/development</li>
+                  <li><i class="fas fa-check"></i>electrical engineering</li>
+                  <li><i class="fas fa-check"></i>arduino projects</li>
+                  <li><i class="fas fa-check"></i>fundamental programming</li>
+              </ul>
+          </div>
+      </div>
+  </div>
+
+  <div class="modalBackground" id="modalBackgroundTwo">
+    <div class="modal">
+        <div class="modalHeader">
+            <p>Categories</p>
+            <button class="modalClose" id="modalCloseTwo"><span class="material-icons-outlined">close</span></button>
+        </div>
+        <div class="modalContent">
+            <ul class="modalList">
+                <li><i class="fas fa-check"></i>computer literacy</li>
+                <li><i class="fas fa-check"></i>microsoft office</li>
+                <li><i class="fas fa-check"></i>google workspace</li>
+                <li><i class="fas fa-check"></i>digital marketing/business</li>
+            </ul>
+        </div>
+    </div>
+  </div>
+
+  <div class="modalBackground" id="modalBackgroundThree">
+    <div class="modal">
+        <div class="modalHeader">
+            <p>Categories</p>
+            <button class="modalClose" id="modalCloseThree"><span class="material-icons-outlined">close</span></button>
+        </div>
+        <div class="modalContent">
+            <ul class="modalList">
+                <li><i class="fas fa-check"></i>computer literacy</li>
+                <li><i class="fas fa-check"></i>fundamental programming</li>
+                <li><i class="fas fa-check"></i>microsoft office</li>
+                <li><i class="fas fa-check"></i>google workspace</li>
+                <li><i class="fas fa-check"></i>web design/development</li>
+                <li><i class="fas fa-check"></i>digital marketing/business</li>
+            </ul>
+        </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footerContent">
+        <ul class="footerSocials">
+            <li><a href="https://www.instagram.com/techconnectlv/"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCq3o575CJEcppmB5NwQRUOw"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="https://twitter.com/TechConnectLV_"><i class="fa-brands fa-twitter"></i></a></li>
+        </ul>
+        <ul class="footerNavLinks">
+            <li><a href="privaypolicy.html">Privacy Policy</a></li>
+            <li><a href="cookiepolicy.html">Cookie Policy</a></li>
+        </ul>
+        <p class="about">A non profit organization designed to connect the community of las vegas with valuable technological information.</p>
+        <p>Tech Connect LV <span class="material-icons-outlined">copyright</span> 2021</p>
+    </div>
+   </footer>
+    
+   <script>
+       //services modal 1 code
+
+        var modalBtnOne = document.getElementById('modalBtnOne');
+        var modalBackgroundOne = document.getElementById('modalBackgroundOne');
+        var modalCloseOne = document.getElementById('modalCloseOne');
+
+        modalBtnOne.addEventListener('click', () => {
+            modalBackgroundOne.classList.add('backgroundOneActive');
+        })
+
+        modalCloseOne.addEventListener('click', () => {
+            modalBackgroundOne.classList.remove('backgroundOneActive');
+        })
+
+        //services modal 2 code
+
+        var modalBtnTwo = document.getElementById('modalBtnTwo');
+        var modalBackgroundTwo = document.getElementById('modalBackgroundTwo');
+        var modalCloseTwo = document.getElementById('modalCloseTwo');
+
+        modalBtnTwo.addEventListener('click', () => {
+            modalBackgroundTwo.classList.add('backgroundTwoActive');
+        })
+
+        modalCloseTwo.addEventListener('click', () => {
+            modalBackgroundTwo.classList.remove('backgroundTwoActive');
+        })
+
+        //services modal 3 code
+
+        var modalBtnThree = document.getElementById('modalBtnThree');
+        var modalBackgroundThree = document.getElementById('modalBackgroundThree');
+        var modalCloseThree = document.getElementById('modalCloseThree');
+
+        modalBtnThree.addEventListener('click', () => {
+            modalBackgroundThree.classList.add('backgroundThreeActive');
+        })
+
+        modalCloseThree.addEventListener('click', () => {
+            modalBackgroundThree.classList.remove('backgroundThreeActive');
+        })
+   </script>
+   <script src="script.js"></script>
+</body>
+</html>

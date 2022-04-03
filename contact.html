@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Tech Connect LV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <script src="https://kit.fontawesome.com/8c371e499e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'>
+</head>
+<body>
+            <!--Navigation bar section-->
+
+            <nav class="navbar">
+                <div class="pageHeader">
+                    <div class="title">
+                        Tech Connect LV
+                    </div>
+                    <div class="toggleButton">
+                        <span class="material-icons-outlined menuOpen">menu</span>
+                    </div>
+                </div>
+                <div class="navLinks">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><button class="registerBtn"><a href="register.html">Register</a></button></li>
+                    </ul>
+                </div>
+           </nav>
+
+           <!--Contact section-->
+
+           <div class="contact">
+               <div class="contactContainer">
+                   <form class="contactForm" action="https://formsubmit.co/techconnectlv@gmail.com" method="POST">
+                        <h1>Get in touch with us.</h1>
+                        <div class="inputContainer name">
+                            <div class="inputContent firstName">
+                                <p>First Name</p>
+                                <input class="input firstName" type="text" name="firstName" required>
+                            </div>
+                            <div class="inputContent lastName">
+                                <p>Last Name</p>
+                                <input class="input lastName" type="text" name="lastName" required>
+                            </div>
+                        </div>
+                        <div class="inputContainer userContactInfo">
+                            <div class="inputContent mobile">
+                                <p>Mobile</p>
+                                <input class="input Mobile" type="tel" name="mobile" required>
+                            </div>
+                            <div class="inputContent email">
+                                <p>Email</p>
+                                <input class="input Email" type="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="userMessage">
+                            <p>Message</p>
+                            <textarea class="textareaMessage" name="message"></textarea>
+                        </div>
+                        <button class="submitBtn" type="submit">Send</button>
+                        <input type="hidden" name="_autoresponse" value="Thanks for contacting us, we'll get back to you as soon as possible">
+                    </form>
+                    <div class="contactLinksContainer">
+                        <ul class="contactLinks">
+                            <li>
+                                <i class="fas fa-phone"></i>                            
+                                <div class="linkInfo">
+                                    <p>Call</p>
+                                    <a href="tel:714-951-1714">714-951-1714</a>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>                            
+                                <div class="linkInfo">
+                                    <p>Email</p>
+                                    <a href="mailto:techconnectlv@gmail.com">techconnectlv@gmail.com</a>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                 <div class="linkInfo">
+                                    <p>Location</p>
+                                    <a href="https://goo.gl/maps/xR8Me1qsdj794Gzi8">Las Vegas, Nevada</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+           </div>
+
+           <footer>
+            <div class="footerContent">
+                <ul class="footerSocials">
+                    <li><a href="https://www.instagram.com/techconnectlv/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCq3o575CJEcppmB5NwQRUOw"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="https://twitter.com/TechConnectLV_"><i class="fa-brands fa-twitter"></i></a></li>
+                </ul>
+                <ul class="footerNavLinks">
+                    <li><a href="privaypolicy.html">Privacy Policy</a></li>
+                    <li><a href="cookiepolicy.html">Cookie Policy</a></li>
+                </ul>
+                <p class="about">A non profit organization designed to connect the community of las vegas with valuable technological information.</p>
+                <p>Tech Connect LV <span class="material-icons-outlined">copyright</span> 2021</p>
+            </div>
+           </footer>
+
+           <script src="script.js"></script>
+
+</body>
+</html>
